@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TRT conseils inscription recruteur{% endblock %}
+
+{% block body %}
+<section>
+        <div class="mx-3">
+        <fieldset>
+            <legend>{{job.title}}</legend>
+            </fieldset>
+                <ul class="list-group">
+                    <li class="list-group-item">Adresse : {{job.address}}</li>
+                    <li class="list-group-item">Ville : {{job.city}} </li>
+                    <li class="list-group-item">Code Postal : {{job.zipCode}}</li>
+                </ul>
+            <fieldset>
+                    <div class="h-100">
+                    <h5 class="m-2"> Intitulé de l'offre: {{job.title}}</h5>
+                    <h6>Description:</h6>
+                    <p class="mb-1">{{job.description}}</p>
+            </fieldset>
+            <a class="btn btn-primary" href="{{ path('app_job_apply', {'jobId': job.id, 'id': app.request.get('id') }) }}">Postuler</a> 
+        </div>
+        
+</section>
+{% endblock %}

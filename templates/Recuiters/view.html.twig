@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TRT conseils inscription recruteur{% endblock %}
+
+{% block body %}
+<section>
+        <div class="mx-3"></div>
+        <fieldset>
+        <legend>{{recuiter.companyName}}</legend>
+        </fieldset>
+            {% for message in app.flashes('success') %}
+                <div class="alert alert-success">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        <ul class="list-group">
+            <li class="list-group-item">Adresse : {{recuiter.address}}</li>
+            <li class="list-group-item">Ville : {{recuiter.city}} </li>
+            <li class="list-group-item">Code Postal : {{recuiter.zipCode}}</li>
+        </ul>
+        <fieldset>
+            <legend>Offres</legend> 
+            <button type="button" class="btn btn-primary position-relative">
+            Offres<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">{{recuiter.myOffers|length}} <span class="visually-hidden">unread messages</span></span>
+            </button>
+
+            <a class="btn btn-outline-primary" href="{{ path('app_jobs_form',{'id':recuiter.id})}}">✏️Creer une nouvelle offre</a>
+                {% for offer in recuiter.myOffers %}
+                    <div class="list-group my-2" >
+                        <a href="{{path('app_recuiter_jobs_view',{'id': recuiter.id ,'jobId':offer.id})}}" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1"> Intitulé de l'offre: {{offer.title}}</h5>
+                            <p class="mb-1">Desciption : {{offer.description|slice(0,20)}}...</p>
+                            <p class="alert alert-primary" role="alert">
+                                {% if recuiter.isVerify %}
+                                    Votre annonce à été validée
+                                {% else %}
+                                    Votre annonce est en attente de validation
+                                {% endif %}
+                            </p> 
+
+                            <small> Date de publication: {{offer.publishedAt|format_datetime(pattern="MMMM d  'at'  h:mm a")}}</small>
+                                <a class="btn btn-primary btn-sm" href="{{ path('app_edit_job',{'id':recuiter.id, 'jobId': offer.id })}}">Modifier</a>
+                                <a class="btn btn-primary btn-sm" href="{{ path('app_delete_job',{'id':recuiter.id, 'jobId': offer.id })}}">Suprimer</a>
+
+                            </div>
+                            <small></small>
+                        </a>
+                    </div>
+                {% endfor %}
+        </fieldset>
+
+        
+</section>
+{% endblock %}

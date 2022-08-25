@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+{% block Nav %}
+    <h3>Liste des candidature au poste de {{job.title}}</h3>
+{% endblock %}
+
+{% block body %}
+    <ul class="list-group list-group-flush">
+        {% for applier in job.listApply %}
+            <li class="list-group-item">{{applier.applicantsId.firstName}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

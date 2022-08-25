@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TRT Conseil{% endblock %}
+
+{% block body %}
+        <div>
+            <div class="row justify-content-md-center">
+                <div class="col">
+                    <div class="col px-5">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card position-absolute top-50 start-25 zindex-1 ">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vous êtes une entreprise</h5>
+                                        <p class="card-text">📢Recrutez-votre prochain chef, serveur, sommelier, Receptionniste...</p>
+                                        <a href="{{path("app_register")}}" class="btn btn-primary">
+                                            Inscription Recruteur
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card position-absolute top-50 start-25 zindex-1 ">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vous cherchez un emploi dan l'hôtellerie restauration</h5>
+                                        <p class="card-text">💼Inscrivez-vous vite ici on recrute.</p>
+                                        <a href={{path("app_register_applicant")}} class="btn btn-primary">
+                                        Inscription Candidat
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+                    <img src={{asset('media/people.jpg')}} class="img-fluid" alt="image de presentation">
+                </div>
+            </div>
+        </div>
+{% endblock %}

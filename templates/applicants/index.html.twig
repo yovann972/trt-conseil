@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TRT conseils inscription recruteur{% endblock %}
+{% block Nav %} {% endblock %}
+
+{% block body %}
+<section class="container">
+    <div class="row">
+        <div class="col">
+        <h5 class='text-center'>Information du candidat</h5>
+            {{ form_start(form) }}
+                <fieldset class="mb-3">
+                    <legend>Votre Identité</legend>
+                    {{ form_row(form.lastName) }}
+                    {{ form_row(form.firstName) }}
+                </fieldset>
+                <fieldset>
+                    <legend>CV</legend>
+                        {{ form_row(form.PDF) }}
+                </fieldset>
+                
+                {{ form_row(form.save) }}
+            {{ form_end(form) }}
+        </div>
+    </div>
+</section>
+{% endblock %}

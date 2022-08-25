@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TRT conseils inscription recruteur{% endblock %}
+
+{% block body %}
+<section>
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <fieldset>
+                    <legend>Votre identité</legend>
+                    <ul class="list-group">
+                        <li class="list-group-item">Nom :{{applicant.lastName}}</li>
+                        <li class="list-group-item">Prenom : {{applicant.firstName}}</li>
+                    </ul>
+                <fieldset>
+            </div>
+        </div>
+        </div>
+            <button type="button" class="btn btn-primary position-relative my-2">Mes Offres
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">{{applicant.myApply|length}} 
+            <span class="visually-hidden">unread messages
+            </span>
+            
+            </span>
+            </button>
+                {% for apply in applicant.myApply %}
+                    <div class="list-group my-2" >
+                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">  {{apply.jobsOffersId.title}}</h5>
+                            <p class="mb-1">Desciption : {{apply.jobsOffersId.description|slice(0,20)}}...</p>
+                            <small> Date de publication: {{apply.jobsOffersId.publishedAt|format_datetime(pattern="MMMM d  'at'  h:mm a")}}</small>
+                            </div>
+                            <small></small>
+                        </a>
+                    </div>
+                {% endfor %}
+        </fieldset>
+
+        
+</section>
+{% endblock %}

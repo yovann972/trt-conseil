@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TRT conseils inscription recruteur{% endblock %}
+
+{% block body %}
+<section class="container">
+    <div class="row">
+        <div class="col">
+            <h1>TRT Conseil</h1>
+            <p>Recrutement Hôtellerie & Restauration</p>
+            {% for applicant in applicants %}
+                {{applicant.FirstName}}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

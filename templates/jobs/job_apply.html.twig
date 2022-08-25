@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello JobsFormController!{% endblock %}
+
+{% block body %}
+<section class="container">
+    <div class="row">
+        <div class="col">
+            <h1>TRT Conseil</h1>
+            <h3>Vous êtes sur le point de postuler à l'offre :</h3>
+
+            <h5>{{jobId.title}}</h5>
+
+            <p>{{jobId.city}}</p>
+
+            <p>{{ jobId.description}}</p>
+
+            {{ form_start(form) }}
+                        {{ form_row(form.save) }}
+            {{ form_end(form) }}
+        </div>
+    </div>
+</section>
+{% endblock %}
