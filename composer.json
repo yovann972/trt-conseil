@@ -84,10 +84,10 @@
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
-            "post-install.sh"
+            "@auto-scripts"
         ],
         "post-update-cmd": [
-            "post-install.sh"
+            "@auto-scripts"
         ]
     },
     "conflict": {
