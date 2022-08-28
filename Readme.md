@@ -18,7 +18,7 @@ Requirements:
 - PHP: ^8.1.0
 - MySQL: ^5.7
 
-you'll need test email use MAILHOG
+you'll need MAILHOG for test Email function in local environnement.
 
 
 ------------------------------------------------------------------
