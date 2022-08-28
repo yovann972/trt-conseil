@@ -4,6 +4,10 @@ Website for Recruitement agency in Hotel and restaurant industry.
 
 if you want see the code architecture... please check Docs folder.
 
+html open in your browser, here -> https://github.com/yovann972/trt-conseil/tree/main/Docs
+
+-------------------------------------------------------------------
+
 How to deploy in a local environnement ?
 
 Requirements:
