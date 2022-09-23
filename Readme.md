@@ -20,20 +20,20 @@
     <li> MySQL: ^5.7</li>
 </ul>
 
-<p>you'll need test email use MAILHOG or MAILTRAP</p>
+<p>you'll need test email use <strong>MAILHOG</strong> or <strong>MAILTRAP</strong></p>
 
 ------------------------------------------------------------------
 
 Download zip -> https://github.com/yovann972/trt-conseil.git
 
-<p>1. Ouvrir un terminal et se rendre dans le dossier</p>
+<p>1. Open a terminal</p>
 
 <pre>
 $cd trt-conseil
 $composer install
 </pre>
 
-<p>2. Create a file env.local</p>
+<p>2. Create a .env.local file</p>
 
 <p>3. Configure env.local set vars DATABASE_URL, MAILER_DSN, APP_SECRET</p>
 
