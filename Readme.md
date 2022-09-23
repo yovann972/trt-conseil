@@ -1,46 +1,65 @@
-TRT Conseil 
+<h1>TRT Conseil</h1>
 
-Website for Recruitement agency in Hotel and restaurant industry.
+<p>Website for Recruitement agency in Hotel and restaurant industry.</p>
 
-if you want see the code architecture... please check Docs folder.
+<p>This website is deployed on heroku follow -> 
+    <a href="https://trt-conseil-ay.herokuapp.com/">https://trt-conseil-ay.herokuapp.com/</a>
+</p>
 
-How to deploy in a local environnement ?
+<p>if you want see the code architecture... please check Docs folder.</p>
 
-Requirements:
+<h3><strong>How to deploy in a local environnement ?</strong></h3>
 
-- Composer ^2.3.10
-- Symfony ^6.1.3
-- (MAMP or WAMP or XAMP)
-- PHP: ^8.1.0
-- MySQL: ^5.7
+<p><strong>Requirements:</strong></p>
 
-you'll need test email use MAILHOG
+<ul>
+    <li>Composer ^2.3.10</li>
+    <li>Symfony ^6.1.3</li>
+    <li>(MAMP or WAMP or XAMP)</li>
+    <li>PHP: ^8.1.0</li>
+    <li> MySQL: ^5.7</li>
+</ul>
 
+<p>you'll need test email use MAILHOG or MAILTRAP</p>
 
 ------------------------------------------------------------------
 
 Download zip -> https://github.com/yovann972/trt-conseil.git
 
-Create a database trt_conseil 
+<p>1. Ouvrir un terminal et se rendre dans le dossier</p>
 
-1. Unzip the folder
-3. cd trt-conseil
-4. Open your favorite code editor
-5. Run composer install
-5. Create a file env.local
-6. Configure env.local set vars DATABASE_URL, MAILER_DSN, APP_SECRET
-7. Run APP
+<pre>
+$cd trt-conseil
+$composer install
+</pre>
 
+<p>2. Create a file env.local</p>
+
+<p>3. Configure env.local set vars DATABASE_URL, MAILER_DSN, APP_SECRET</p>
+
+<pre>
+$php bin/console doctrine:database:create
+$php bin/console doctrine:migrations:migrate
+</pre>
+
+<p>7. Run APP</p>
+
+<pre>
+$symfony server:start -d
+</pre>
 
 __________________________________________________________________
 
-Admin section 
+<p><strong>Admin section</strong></p> 
 
-Create a Admin 
+<p>Create a Admin</p>
 
-1. Sign-in as a candidat and log-out
-2. Go to the database and set your roles ["ROLE_ADMIN"]
-3. Login 
+<ol>
+    <li>Sign-in as a candidat and log-out</li>
+    <li>Go to the database and set your roles ["ROLE_ADMIN"]</li>
+    <li>Login</li>
+</ol>
+
 
 
 
