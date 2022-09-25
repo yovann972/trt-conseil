@@ -1,18 +1,51 @@
 <h1>TRT Conseil</h1>
 
-<p>Website for Recruitement agency in Hotel and restaurant industry.</p>
+<p dir="auto"><strong>Objectif:</strong></p>
 
-<p>This website is deployed on heroku follow -> 
+<p dir="auto">Website for Recruitement agency in Hotel and restaurant industry.</p>
+
+<p dir="auto">
+TRT Conseil est une agence de recrutement spécialisée dans l’hôtellerie et la restauration. Fondée en
+2014, la société s’est agrandie au fil des ans et possède dorénavant plus de 12 centres dispersés aux
+quatre coins de la France.
+La crise du coronavirus ayant frappée de plein fouet ce secteur, la société souhaite progressivement
+mettre en place un outil permettant à un plus grand nombre de recruteurs et de candidats de trouver leur
+bonheur.
+TRT Conseil désire avoir un produit minimum viable afin de tester si la demande est réellement présente.
+L’agence souhaite proposer pour l’instant une simple interface avec une authentification.
+4 types d’utilisateur devront pouvoir se connecter :
+Les recruteurs : Une entreprise qui recherche un employé.
+Les candidats : Un serveur, responsable de la restauration, chef cuisinier etc.
+Les consultants : Missionnés par TRT Conseil pour gérer les liaisons sur le back-office entre
+recruteurs et candidats.
+L’administrateur : La personne en charge de la maintenance de l’application.
+</p>
+
+<p dir="auto"><strong>Expected skills:</strong></p>
+
+
+<ol>
+    <li>Créer une base de données dans un SGBD grâce à l’appui d’un schéma physique</li>
+    <li>Opérer des sélections et mises à jour de données via des composants d’accès</li>
+    <li>Développer la logique concernant les requêtes au serveur</li>
+    <li>Mettre en œuvre un système de gestion du contenu</li>
+    <li>Publier l’application sur un serveur Web</li>
+</ol>
+
+
+<p dir="auto">This website is deployed on heroku follow -> 
     <a href="https://trt-conseil-ay.herokuapp.com/">https://trt-conseil-ay.herokuapp.com/</a>
 </p>
 
-<p>if you want see the code architecture... please check Docs folder.</p>
+<p dir="auto">if you want see the code architecture... please check Docs folder.</p>
 
-<h3><strong>How to deploy in a local environnement ?</strong></h3>
+_________________________________________________________________
 
-<p><strong>Requirements:</strong></p>
+<h3 dir="auto"><strong>How to deploy in a local environnement ?</strong></h3>
 
-<ul>
+<p dir="auto"><strong>Requirements:</strong></p>
+
+<ul dir="auto">
     <li>Composer ^2.3.10</li>
     <li>Symfony ^6.1.3</li>
     <li>(MAMP or WAMP or XAMP)</li>
@@ -20,29 +53,29 @@
     <li> MySQL: ^5.7</li>
 </ul>
 
-<p>you'll need test email use <strong>MAILHOG</strong> or <strong>MAILTRAP</strong></p>
+<p dir="auto">you'll need test email use <strong>MAILHOG</strong> or <strong>MAILTRAP</strong></p>
 
 ------------------------------------------------------------------
 
 Download zip -> https://github.com/yovann972/trt-conseil.git
 
-<p>1. Open a terminal</p>
+<p dir="auto">1. Open a terminal</p>
 
 <pre>
 $cd trt-conseil
 $composer install
 </pre>
 
-<p>2. Create a .env.local file</p>
+<p dir="auto">2. Create a .env.local file</p>
 
-<p>3. Configure env.local set vars DATABASE_URL, MAILER_DSN, APP_SECRET</p>
+<p dir="auto">3. Configure env.local set vars DATABASE_URL, MAILER_DSN, APP_SECRET</p>
 
 <pre>
 $php bin/console doctrine:database:create
 $php bin/console doctrine:migrations:migrate
 </pre>
 
-<p>7. Run APP</p>
+<p dir="auto">7. Run APP</p>
 
 <pre>
 $symfony server:start -d
@@ -50,9 +83,9 @@ $symfony server:start -d
 
 __________________________________________________________________
 
-<p><strong>Admin section</strong></p> 
+<p dir="auto"><strong>Admin section</strong></p> 
 
-<p>Create a Admin</p>
+<p dir="auto">Create a Admin</p>
 
 <ol>
     <li>Sign-in as a candidat and log-out</li>
