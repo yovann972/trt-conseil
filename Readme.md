@@ -1,6 +1,6 @@
-<h1>TRT Conseil</h1>
+<h1>TRT Conseil (Assessment 2022)</h1>
 
-<p dir="auto"><strong>Objectif:</strong></p>
+<p dir="auto"><strong>Objective of the assessment:</strong></p>
 
 <p dir="auto">Website for Recruitement agency in Hotel and restaurant industry.</p>
 
@@ -23,7 +23,6 @@ L’administrateur : La personne en charge de la maintenance de l’application.
 
 <p dir="auto"><strong>Expected skills:</strong></p>
 
-
 <ol>
     <li>Créer une base de données dans un SGBD grâce à l’appui d’un schéma physique</li>
     <li>Opérer des sélections et mises à jour de données via des composants d’accès</li>
@@ -45,10 +44,10 @@ __________________________________________________________________
 <p dir="auto"><strong>UML class diagram:</strong></p>
 <img src="https://github.com/yovann972/trt-conseil/blob/main/diagrams/db%20UML%20diagram.png?raw=true">
 
-<p dir="auto"><strong>functional diagram:</strong></p>
+<p dir="auto"><strong>Functional diagram:</strong></p>
 <img src="https://github.com/yovann972/trt-conseil/blob/main/diagrams/Diagramme%20fonctionnel%20TRT%20Conseil.png?raw=true">
 
-<p dir="auto"><strong>sequence diagram</strong></p>
+<p dir="auto"><strong>Sequence diagram:</strong></p>
 <img src="https://github.com/yovann972/trt-conseil/blob/main/diagrams/diagramme%20de%20sequence.png?raw=true">
 
 __________________________________________________________________
