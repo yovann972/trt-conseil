@@ -42,9 +42,14 @@ __________________________________________________________________
 
 <h2 dir="auto">Diagrams</h2>
 
+<p dir="auto"><strong>UML class diagram:</strong></p>
 <img src="https://github.com/yovann972/trt-conseil/blob/main/diagrams/db%20UML%20diagram.png?raw=true">
 
+<p dir="auto"><strong>functional diagram:</strong></p>
+<img src="https://github.com/yovann972/trt-conseil/blob/main/diagrams/Diagramme%20fonctionnel%20TRT%20Conseil.png?raw=true">
 
+<p dir="auto"><strong>sequence diagram</strong></p>
+<img src="https://github.com/yovann972/trt-conseil/blob/main/diagrams/diagramme%20de%20sequence.png?raw=true">
 
 __________________________________________________________________
 
