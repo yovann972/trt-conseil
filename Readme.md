@@ -31,14 +31,23 @@ L’administrateur : La personne en charge de la maintenance de l’application.
     <li>Mettre en œuvre un système de gestion du contenu</li>
     <li>Publier l’application sur un serveur Web</li>
 </ol>
-________________________________________________________________
+_________________________________________________________________
 
 <p dir="auto">This website is deployed on heroku follow -> 
     <a href="https://trt-conseil-ay.herokuapp.com/">https://trt-conseil-ay.herokuapp.com/</a>
 </p>
 
 <p dir="auto">if you want see the code architecture... please check Docs folder.</p>
-_________________________________________________________________
+__________________________________________________________________
+
+<h2 dir="auto">Diagrams</h2>
+
+<img src="https://github.com/yovann972/trt-conseil/blob/main/diagrams/db%20UML%20diagram.png?raw=true">
+
+
+
+__________________________________________________________________
+
 
 <h3 dir="auto"><strong>How to deploy in a local environnement ?</strong></h3>
 
