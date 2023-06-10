@@ -1,6 +1,6 @@
 <h1>TRT Conseil (Assessment 2022) (exams I took during my training at STUDI)</h1>
 
-<p>VISIT THE PROJECT HERE<a href="http://trt-conseil.atspace.cc/"><bold>here</bold></a></p> 
+<p>VISIT THE PROJECT <a href="http://trt-conseil.atspace.cc/"><bold>HERE</bold></a></p> 
 
 <p dir="auto"><strong>Objective of the assessment:</strong></p>
 
